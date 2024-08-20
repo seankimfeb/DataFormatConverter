@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from file_selector import open_file
-from converter import testingconvert
+from converter import convert_format
 
 def create_main_window():
     window = tk.Tk()
@@ -37,7 +37,15 @@ def create_main_window():
     combo.set("CSV")  # Set default value
     combo.pack(pady=(0, 10))
 
-    convert_button = tk.Button(convert_frame, text="Convert!", command=lambda: testingconvert(selected_file_label.cget("text")), state=tk.DISABLED, bg='#2196F3', fg='white', font=("Arial", 12, 'bold'))
+    convert_button = tk.Button(
+        convert_frame, 
+        text="Convert!", 
+        command=lambda: convert_format(formatconfirm.cget("text").split()[-1], selected_file_label.cget("text"), combo.get().lower(),selected_file_label.cget("text").split('/')[-1].split('.')[0]), 
+        state=tk.DISABLED, 
+        bg='#2196F3', 
+        fg='white', 
+        font=("Arial", 12, 'bold')
+    )
     convert_button.pack(pady=(10, 0))
 
     return window
