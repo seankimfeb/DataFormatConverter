@@ -16,7 +16,7 @@ Before running the application, ensure you have the following Python packages in
 ```bash
 pip install pandas openpyxl lxml
 
-git clone https://github.com/yourusername/DataFormatConverter.git
+git clone https://github.com/seankimfeb/DataFormatConverter.git
 cd DataFormatConverter
 
 Install Dependencies:
@@ -32,7 +32,8 @@ pip install lxml
 Run the Application:
 
 python main.py
-Use the Interface:
+
+## Use the Interface:
 
 Open File: Click the "Open File" button to select your input file.
 Select Output Format: Choose the desired output format from the dropdown menu.
@@ -40,7 +41,7 @@ Convert: Click the "Convert!" button to start the conversion. A success message 
 Locate Converted File:
 The converted file will be saved in the same directory as the original input file.
 
-Example Files
+## Example Files
 CSV:
 
 Username; Identifier; First name; Last name
