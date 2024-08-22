@@ -1,16 +1,20 @@
-# DataFormatConverter
 
-Data Format Converter is a simple and user-friendly Python application that allows you to convert files between various data formats, including CSV, JSON, XML, and XLSX. This app uses a graphical user interface (GUI) built with tkinter to make the conversion process straightforward and accessible.
+# Data Format Converter
 
-Features
-Convert Between Multiple Formats: Supports conversion between CSV, JSON, XML, and XLSX.
-Intuitive GUI: Easy-to-use graphical interface for selecting files and formats.
-Same Directory Output: Converted files are saved in the same directory as the input file.
-Error Handling: Notifies the user if the conversion fails due to unsupported formats or other issues.
-Success Notification: Displays a popup window to confirm a successful conversion.
-Installation
-Clone the Repository:
+A simple Python application that converts data between CSV, JSON, XML, and XLSX formats using `pandas` and `tkinter`.
 
+## Features
+
+- Convert files between multiple formats.
+- Simple and user-friendly GUI built with `tkinter`.
+- Supports CSV, JSON, XML, and XLSX formats.
+
+## Requirements
+
+Before running the application, ensure you have the following Python packages installed:
+
+```bash
+pip install pandas openpyxl lxml
 
 git clone https://github.com/yourusername/DataFormatConverter.git
 cd DataFormatConverter
@@ -24,7 +28,7 @@ If you plan to convert files to XML, install the lxml library:
 
 pip install lxml
 
-Usage
+## Usage
 Run the Application:
 
 python main.py
