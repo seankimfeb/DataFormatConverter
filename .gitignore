@@ -1,3 +1,6 @@
 __pycache__/
 *.csv
 *.json
+build/main/
+dist/
+main.spec
